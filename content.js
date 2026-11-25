@@ -87,7 +87,7 @@ const T = {
     "proof_card2d": "Experience operating a smart store and producing ads/sponsored content. From planning to operations and settlement, I can cover the practical workflow end to end."
   },
   "ko": {
-    "brand_tag": "콘텐츠 제작자 · 마케팅 파트너",
+    "brand_tag": "콘텐츠 제작자 \n· 마케팅 파트너",
     "nav1": "소개",
     "nav2": "경력",
     "nav3": "활동영상",
@@ -150,20 +150,20 @@ const T = {
     "quote_note": "브랜드와 예산에 맞는 협업 방식을 제안드립니다.",
     "channel_link": "채널 보기 ↗",
     "intro_eyebrow": "소개",
-    "intro_title": "도토린 — 크리에이터, 마케터, 스토리텔러.",
+    "intro_title": "도토린 Dotorin \n 크리에이터, 마케터, 스토리텔러.",
     "intro_p1": "여행, 로컬 공간, 라이프스타일, 교육 관련 브랜드를 위해 실용적이고 이해하기 쉬운 브랜디드 콘텐츠를 제작합니다. 콘텐츠 제작력에 커뮤니케이션과 마케팅 관점을 더합니다.",
     "intro_p2": "퍼스에 거주하며, 호주 현지 기반으로 활동하고 있습니다. 중국어권 대상 플랫폼 계정도 운영하여 필요 시 중국어 업로드도 가능합니다.",
     "intro_box1t": "활동 기반",
-    "intro_box1d": "퍼스, 웨스턴오스트레일리아",
+    "intro_box1d": "서호주 퍼스, 웨스턴오스트레일리아",
     "intro_box2t": "주요 시장",
     "intro_box2d": "한국 · 호주 · 중국어권",
     "intro_box3t": "주요 분야",
     "intro_box3d": "여행, 식당, 카페, 뷰티, 교육, 숙박",
     "proof_eyebrow": "전문 역량",
     "proof_title": "검증된 역량",
-    "proof_lead": "쇼호스트로서의 전달력과, 성과로 증명된 설득력을 갖추고 있습니다.",
+    "proof_lead": "쇼호스트로서의 전달력과, \n성과로 증명된 설득력을 갖추고 있습니다.",
     "proof_card1t": "쇼호스트의 전달력",
-    "proof_card1d": "공공기관 홍보 영상 나레이션, 라디오 진행. 안정적인 딕션으로 신뢰감을 만들어냅니다.",
+    "proof_card1d": "공공기관 홍보 영상 나레이션,\n 라디오 진행 경험 안정적인 딕션으로 신뢰감을 만들어냅니다.",
     "proof_card2t": "기획·제작 올라운더",
     "proof_card2d": "스마트스토어 운영 및 광고/협찬 콘텐츠 제작 경험. 기획부터 운영, 정산까지 실무를 한 번에 커버합니다."
   },
@@ -301,7 +301,7 @@ const CAREER = [
     ],
     "ko": [
       "콘텐츠 제작 및 해외 협업",
-      "유튜브 운영, 해외 여행 콘텐츠, 해외 5성급 호텔 및 로컬 브랜드 협업."
+      "해외 여행 콘텐츠, 해외 5성급 호텔 및 로컬 브랜드 협업."
     ],
     "zh": [
       "内容制作与国际合作",
@@ -662,7 +662,7 @@ const quotePackages = [
     "long-basic",
     [
       "Natural brand integration within a YouTube long-form video (duration negotiable).",
-      "유튜브 롱폼 영상 내 자연스러운 브랜드 삽입 (분량 조절 가능).",
+      "유튜브 롱폼 영상 내 자연스러운 브랜드 삽입 (분량 조절 가능)",
       "在 YouTube 长视频中自然植入品牌（时长可协商）。"
     ]
   ],
