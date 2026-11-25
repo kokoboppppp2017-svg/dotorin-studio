@@ -482,7 +482,7 @@ const MEDIA = [
     "cat": "food",
     "shape": "tall",
     "img": "food-01",
-    "link": "https://www.instagram.com/dotorin_life/",
+    "link": "https://www.instagram.com/reel/Ddlpk8aJURl/?utm_source=ig_web_copy_link&evlk=NTc4MTIwNjQ2YQ==",
     "disabled": false,
     "title": {
      "en": "Restaurant Feature",
@@ -499,7 +499,7 @@ const MEDIA = [
     "cat": "food",
     "shape": "tall",
     "img": "food-02",
-    "link": "https://www.instagram.com/dotorin_life/",
+    "link": " https://youtube.com/shorts/EHr4cmvG0qA?si=4A7EdIDOfaw9UC-h",
     "disabled": false,
     "title": {
        "en": "Café Feature",
@@ -516,7 +516,7 @@ const MEDIA = [
     "cat": "food",
     "shape": "tall",
     "img": "food-03",
-    "link": "https://www.instagram.com/dotorin_life/",
+    "link": "https://youtube.com/shorts/LsoSguus2zY?si=KHvbb3zUrGk4FEMh",
     "disabled": false,
     "title": {
      "en": "Local Dining Experience",
