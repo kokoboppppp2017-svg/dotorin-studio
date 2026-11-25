@@ -568,19 +568,19 @@ const MEDIA = [
 
 // 사진 파일 경로 (각 카드별 독립 교체 가능)
 const IMAGES = {
-  "travel-01": "images/travel-01.jpg",
-  "travel-02": "images/travel-02.jpg",
-  "space-01": "images/space-01.jpg",
-  "space-02": "images/space-02.jpg",
-  "space-03": "images/space-03.jpg",
-  "edu-01": "images/edu-01.jpg",
-  "edu-02": "images/edu-02.jpg",
-  "edu-03": "images/edu-03.jpg",
-  "food-01": "images/food-01.jpg",
-  "food-02": "images/food-02.jpg",
-  "food-03": "images/food-03.jpg",
-  "beauty-01": "images/beauty-01.jpg",
-  "beauty-02": "images/beauty-02.jpg"
+   "travel-01": "images/travel-01.png",
+  "travel-02": "images/travel-02.png",
+  "space-01": "images/space-01-new.jpg",
+  "space-02": "images/space-02-new.jpg",
+  "space-03": "images/space-03-new.jpg",
+  "edu-01": "images/edu-01-new.jpg",
+  "edu-02": "images/edu-02-new.jpg",
+  "edu-03": "images/edu-03-new.jpg",
+  "food-01": "images/food-01-new.jpg",
+  "food-02": "images/food-02-new.jpg",
+  "food-03": "images/food-03-new.jpg",
+  "beauty-01": "images/beauty-01-new.jpg",
+  "beauty-02": "images/beauty-02-new.jpg"
 };
 
 // 견적 문의 문구
