@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DOTORIN — Perth-based creative portfolio and collaboration page." />
+  <title>DOTORIN | Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#edf4f9;--paper:#ffffff;--ink:#193529;--muted:#64786c;--line:#d8e2db;--green:#1f4c3a;--green2:#2f6851;--mint:#e8f1e5;--sky:#e9f4ff;--shadow:0 12px 32px rgba(31,76,58,.08);--radius:20px;--max:520px;}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:84px;background:#eaf0ee}
+    body{margin:0;background:#fff;color:var(--ink);font-family:'Manrope','Noto Sans KR',system-ui,sans-serif;max-width:var(--max);margin-inline:auto;box-shadow:0 0 40px rgba(20,50,40,.08);}
+    a{color:inherit;text-decoration:none} img{display:block;max-width:100%}
+    .wrap{padding:0 16px}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px}
+    .brandline{display:flex;align-items:center;gap:10px;min-width:0;white-space:nowrap}
+    .brand{font-size:18px;font-weight:800;letter-spacing:-.04em;text-transform:uppercase}
+    .divider{width:1px;height:16px;background:#cfd8d1;flex:0 0 1px}
+    .tagline{font-size:11px;color:#4c6056;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .langs{display:flex;gap:4px;background:#f6f8f6;border:1px solid var(--line);padding:3px;border-radius:999px;flex:0 0 auto}
+    .langs button{border:0;background:transparent;border-radius:999px;padding:6px 10px;font:700 11px/1 'Manrope','Noto Sans KR',sans-serif;color:var(--green)}
+    .langs button.active{background:var(--green);color:#fff}
+    .nav{display:flex;gap:14px;overflow:auto;white-space:nowrap;padding:0 16px 10px;scrollbar-width:none}
+    .nav::-webkit-scrollbar{display:none}
+    .nav a{font-size:12px;font-weight:700;color:#65776e}
+    section{padding:28px 0;border-bottom:1px solid #eef2ee}
+    .eyebrow{font-size:10px;font-weight:800;letter-spacing:.18em;color:#5b7e6a;text-transform:uppercase;margin-bottom:10px}
+    h1,h2,h3,h4,p{margin:0}
+    h1{font-size:44px;line-height:.95;letter-spacing:-.06em}
+    h2{font-size:26px;line-height:1.15;letter-spacing:-.04em;margin-bottom:8px}
+    .lead{font-size:13px;line-height:1.7;color:#4e6158}
+    .hero{background:linear-gradient(180deg,#eef7ff 0%,#ffffff 70%);overflow:hidden}
+    .hero-panel{position:relative;border-radius:26px;padding:20px 18px 18px;min-height:390px;background:linear-gradient(135deg,#eef8ff 0%,#f9fcff 36%,#ffffff 100%);border:1px solid #dbe7ef;overflow:hidden}
+    .hero-panel:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.92) 42%,rgba(255,255,255,.32) 72%,rgba(255,255,255,.08) 100%);pointer-events:none}
+    .hero-photo{position:absolute;right:-24px;top:0;bottom:0;width:52%;background-image:url('images/quokka-base.jpg');background-size:cover;background-position:center;filter:blur(.4px) saturate(1.02);opacity:.98;transform:scale(1.03)}
+    .hero-copy{position:relative;z-index:2;max-width:64%}
+    .hero-k-sub{margin-top:10px;font-size:16px;font-weight:800;line-height:1.4;letter-spacing:-.03em}
+    .hero-desc{margin-top:12px;font-size:13px;line-height:1.65;color:#4d6359}
+    .cta-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 14px;border-radius:14px;font-size:13px;font-weight:800;border:1px solid var(--green);background:var(--green);color:#fff}
+    .btn.out{background:#fff;color:var(--green)}
+    .metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px;position:relative;z-index:2}
+    .metric{background:rgba(255,255,255,.9);border:1px solid #d8e2db;border-radius:16px;padding:12px 10px;min-width:0}
+    .metric strong{display:block;font-size:18px;line-height:1;color:var(--green);letter-spacing:-.04em;white-space:nowrap}
+    .metric span{display:block;margin-top:6px;font-size:10px;line-height:1.45;color:#5f7268}
+    .chip-row{display:flex;gap:8px;overflow:auto;padding-bottom:2px;scrollbar-width:none;margin-top:14px}
+    .chip-row::-webkit-scrollbar{display:none}
+    .chip{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:800;color:var(--green)}
+
+    .timeline-wrap{position:relative;padding-left:18px;margin-top:18px}
+    .timeline-wrap:before{content:'';position:absolute;left:5px;top:6px;bottom:10px;width:2px;background:linear-gradient(to bottom,#7db2a0,#dcebe3)}
+    .timeline-item{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 14px 14px 16px;margin-bottom:12px;box-shadow:var(--shadow)}
+    .timeline-item:before{content:'';position:absolute;left:-17px;top:19px;width:10px;height:10px;border-radius:50%;background:#7eb19d;border:2px solid #fff;box-shadow:0 0 0 1px #d3dfd8}
+    .timeline-item h4{font-size:14px;line-height:1.35;margin-bottom:6px;letter-spacing:-.02em}
+    .timeline-item p{font-size:12px;line-height:1.65;color:#556961}
+    .summary-card{margin-top:6px;border-radius:18px;background:linear-gradient(135deg,#1f4c3a 0%,#3a6f58 100%);color:#fff;padding:16px 16px 15px}
+    .summary-card h3{font-size:16px;margin-bottom:6px}
+    .summary-card p{font-size:12px;line-height:1.65;color:rgba(255,255,255,.86)}
+
+    .tabs{display:flex;gap:8px;overflow:auto;scrollbar-width:none;padding-bottom:4px;margin:16px 0 14px}
+    .tabs::-webkit-scrollbar{display:none}
+    .tabs button{flex:0 0 auto;border:1px solid var(--line);background:#fff;color:var(--green);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:800}
+    .tabs button.active{background:var(--green);color:#fff;border-color:var(--green)}
+    .media-group{display:none}
+    .media-group.active{display:block}
+    .wide-list{display:grid;gap:12px}
+    .wide-card,.tall-card{display:block;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+    .wide-thumb{aspect-ratio:16/9;background:#e7efea}
+    .wide-thumb img,.tall-thumb img{width:100%;height:100%;object-fit:cover}
+    .wide-body{padding:13px 14px 14px}
+    .wide-body h4{font-size:15px;line-height:1.35;margin-bottom:5px}
+    .wide-body p{font-size:12px;color:#5c7066;line-height:1.6}
+    .scroll-rail{display:flex;gap:10px;overflow:auto;scrollbar-width:none;padding-bottom:4px}
+    .scroll-rail::-webkit-scrollbar{display:none}
+    .tall-card{flex:0 0 40%;min-width:150px}
+    .tall-thumb{aspect-ratio:9/16;background:#ebf1ec;position:relative}
+    .play{position:absolute;right:10px;bottom:10px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(20,49,38,.82);color:#fff;font-size:13px}
+    .inactive{position:absolute;left:10px;top:10px;background:rgba(255,255,255,.9);color:#385847;padding:5px 8px;border-radius:999px;font-size:9px;font-weight:800}
+    .tall-body{padding:10px 11px 12px}
+    .tall-body h4{font-size:13px;line-height:1.35;margin-bottom:4px}
+    .tall-body p{font-size:11px;line-height:1.55;color:#5c7066}
+
+    .process-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+    .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--shadow)}
+    .step .num{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--mint);color:var(--green);font-size:12px;font-weight:800;margin-bottom:10px}
+    .step h4{font-size:14px;margin-bottom:5px}
+    .step p{font-size:11.5px;line-height:1.6;color:#5a6e64}
+
+    .contact-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}
+    .profile-top{display:flex;gap:14px;align-items:center;margin-bottom:14px}
+    .avatar{width:68px;height:68px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+    .role{font-size:12px;color:#61766b}
+    .socials{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 14px}
+    .socials a{padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:#f9fcf8;font-size:12px;font-weight:800;color:var(--green)}
+    .contact-list{display:grid;gap:8px;font-size:12px;color:#56685f;line-height:1.55}
+    .contact-list b{color:var(--ink)}
+    footer{padding:22px 16px 30px;font-size:11px;color:#6a7e73}
+
+    @media (max-width:380px){
+      h1{font-size:39px} .hero-copy{max-width:67%} .tagline{font-size:10px} .metric strong{font-size:17px} .tall-card{min-width:142px}
+    }
+  
+body{max-width:520px;font-family:Arial,"Noto Sans KR","PingFang SC",sans-serif;line-height:1.5} .brand{font-size:20px;letter-spacing:-.035em}.tagline{font-size:10px}.hero-panel{min-height:0;padding:18px 14px 14px;background:#e9f6ff;border-radius:18px}.hero-photo{width:100%;right:0;top:0;bottom:auto;aspect-ratio:1.775;background-size:100% 100%;background-position:right top;filter:none;transform:none;mask-image:linear-gradient(to bottom,#000 0%,#000 84%,transparent 100%)}.hero-panel:after{background:linear-gradient(90deg,#edf7ff 2%,rgba(237,247,255,.97) 28%,rgba(237,247,255,.85) 49%,rgba(237,247,255,0) 69%)}.hero-copy{max-width:none}.hero-copy h1{font-size:clamp(15px,5.1vw,27px);white-space:nowrap;letter-spacing:-.055em;line-height:1.25;margin:12px 0}.hero-desc{max-width:57%;font-size:12px;line-height:1.55}.hero-copy .eyebrow{font-size:9px;letter-spacing:.09em}.cta-row{gap:6px;margin-top:15px}.btn{font-size:11px;padding:9px 10px;border-radius:9px}.metric-row{gap:6px;margin-top:20px}.metric{padding:10px 8px;border-radius:10px}.metric strong{font-size:19px}.metric span{font-size:10px}.chip{font-size:11px;padding:6px 9px}.timeline-wrap{padding-left:22px;margin-top:16px}.timeline-wrap:before{left:6px;background:#a6c7b6}.timeline-item{border:0;border-bottom:1px solid #e6eee9;border-radius:0;padding:4px 0 12px 5px;margin:0 0 13px;box-shadow:none}.timeline-item:before{left:-21px;top:8px}.timeline-item h4{font-size:14px}.timeline-item p{font-size:12px}.summary-card{border-radius:12px}.media-group{padding:0;border:0}.wide-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.wide-card,.tall-card{border-radius:10px;box-shadow:none;min-width:0}.wide-body,.tall-body{padding:8px}.wide-body h4,.tall-body h4{font-size:12px;line-height:1.4}.wide-body p,.tall-body p{font-size:10px;line-height:1.45}.scroll-rail{gap:8px;scroll-snap-type:x mandatory}.tall-card{flex:0 0 calc((100% - 16px)/3);min-width:0;scroll-snap-align:start}.tall-thumb{aspect-ratio:9/16}.media-status,.reference-link,.image-note{display:block;font-size:10px;color:#62766c;margin-top:6px}.reference-link{font-weight:700;text-decoration:underline}.tabs{gap:5px;margin:12px 0}.tabs button{padding:7px 9px;font-size:11px}.wide-thumb{position:relative}.profile-top .avatar{flex:none}section{padding:24px 0}h2{font-size:23px}.brandline{flex:1}.tagline{max-width:145px}@media(max-width:380px){.tagline,.divider{display:none}.hero-copy h1{font-size:clamp(14px,5vw,19px)}.hero-desc{max-width:60%;font-size:11px}.metric strong{font-size:16px}.wrap{padding:0 12px}}[lang=ko] .hero-copy h1{font-size:clamp(15px,4.6vw,24px)}[lang=zh-Hans] .hero-copy h1{font-size:clamp(15px,4.7vw,24px)}
+#contact{text-align:center}#contact h2{font-size:clamp(19px,5vw,25px);word-break:keep-all}#contact .lead{font-size:12px}.contact-new{margin-top:17px;display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left;padding:13px}.email-side h3{font-size:15px;line-height:1.4}.email-side p{font-size:11px;color:var(--muted);margin:7px 0 12px}.email-cta{display:block;text-align:center;background:#1f4c3a;color:white;padding:12px 7px;border-radius:9px;font-size:12px;font-weight:800}.email-address{display:block;font-size:10px;font-weight:700;margin-top:12px;overflow-wrap:anywhere}.social-side{display:grid;gap:7px}.social-side a{display:grid;grid-template-columns:25px 1fr;align-items:center;gap:2px 7px;border:1px solid var(--line);border-radius:9px;padding:8px;background:#f7f9f8}.social-side b{font-size:12px;overflow-wrap:anywhere}.social-side small{grid-column:2;font-size:9px;color:var(--muted)}.social-side i{grid-row:span 2;font-style:normal;color:white;border-radius:6px;text-align:center;font-size:15px;line-height:25px}.social-side .yt,.social-side .xhs{background:#e92335}.social-side .ig{background:#bc268a}.social-side .xhs{font-size:7px}.china-note{grid-column:1/-1;font-size:10px;color:var(--muted)}.quote-area{text-align:center;margin-top:14px;padding:14px;background:#edf5ee;border-radius:12px}.quote-area p{font-size:12px;margin-bottom:9px;color:var(--muted)}.quote-area .btn{width:100%}@media(max-width:350px){.contact-new{grid-template-columns:1fr}}
+
+.quote-area details summary{cursor:pointer;list-style:none}.quote-area summary::-webkit-details-marker{display:none}.quote-area summary:after{content:' +';margin-left:8px}.quote-area details[open] summary:after{content:' −'}.quote-area form{text-align:left;margin-top:12px}.package-choice{display:flex;align-items:flex-start;gap:8px;background:white;border:1px solid var(--line);border-radius:9px;padding:10px;margin:6px 0;cursor:pointer}.package-choice input{accent-color:var(--green);margin-top:4px;flex:none}.package-choice b{display:block;font-size:12px}.package-choice span span{display:block;font-size:11px;color:var(--muted);line-height:1.5}.package-choice:has(input:checked){border-color:var(--green);background:#f9fdf9}.quote-fields{display:grid;gap:8px;margin:12px 0}.quote-fields label{display:grid;gap:4px;font-size:11px;font-weight:700}.quote-fields input,.quote-fields textarea{width:100%;border:1px solid var(--line);border-radius:7px;background:white;padding:8px;font:inherit;font-size:14px;color:var(--ink)}.quote-area form small{display:block;margin-top:8px;font-size:10px;color:var(--muted)}.quote-area button{cursor:pointer}
+
+/* --- custom intro / hero refinements --- */
+.hero-photo{background-image:url('images/quokka.jpg') !important;background-size:100% 100% !important;background-position:center center !important;}
+.hero-panel:after{background:linear-gradient(90deg,rgba(237,247,255,.96) 0%,rgba(237,247,255,.94) 24%,rgba(237,247,255,.80) 45%,rgba(237,247,255,.15) 62%,rgba(237,247,255,0) 69%) !important;}
+#intro .eyebrow,#proof .eyebrow{margin-bottom:12px}
+.intro-card{display:grid;grid-template-columns:118px 1fr;gap:14px;align-items:start;border:1px solid var(--line);border-radius:20px;background:#fbfcfb;padding:14px;box-shadow:var(--shadow)}
+.intro-photo{width:100%;border-radius:18px;object-fit:cover;aspect-ratio:3/4;border:1px solid #dfe8e1}
+.intro-body h2{font-size:19px;line-height:1.3;margin-bottom:10px;letter-spacing:-.04em}
+.intro-body p{font-size:11.5px;line-height:1.7;color:#50645a;margin-bottom:10px}
+.intro-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.fact{border:1px solid var(--line);border-radius:16px;background:#f8faf8;padding:12px 12px 11px}
+.fact strong{display:block;font-size:12px;line-height:1.35;margin-bottom:6px;color:var(--green)}
+.fact span{display:block;font-size:11px;line-height:1.6;color:#4f645a}
+#proof .lead{margin-bottom:14px}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.proof-card{border:1px solid var(--line);border-radius:18px;background:#fff;padding:15px;box-shadow:var(--shadow)}
+.proof-card h3{font-size:14px;line-height:1.35;margin-bottom:7px;letter-spacing:-.02em}
+.proof-card p{font-size:11.5px;line-height:1.7;color:#556961}
+@media (max-width:420px){
+  .intro-card{grid-template-columns:96px 1fr;gap:12px;padding:12px}
+  .intro-body h2{font-size:17px}
+  .intro-facts{grid-template-columns:1fr;gap:8px}
+  .proof-grid{grid-template-columns:1fr}
+}
+
+
+#experience .summary-card{background:transparent;color:#1f4c3a;border:0;border-left:3px solid #79ad98;border-radius:0;padding:10px 12px;margin-top:14px;box-shadow:none}#experience .summary-card h3{font-size:19px;font-weight:800;color:#1f4c3a}#experience .summary-card p{color:#405d50;font-size:13px}#experience .reveal-pending{opacity:0;transform:translateY(18px)}#experience .reveal-in{opacity:1;transform:translateY(0);transition:opacity .65s ease,transform .65s ease}#copyStatus{font-size:12px;font-weight:800;color:#1f4c3a;text-align:center;margin-top:8px}@media(prefers-reduced-motion:reduce){#experience .reveal-pending,#experience .reveal-in{opacity:1;transform:none;transition:none}}
+
+/* Collaboration options — grouped, light cards */
+.quote-area{background:#f8faf8;border:1px solid #dce5de}.package-group{padding:12px 0 10px}.package-group+.package-group{border-top:1px solid #dce5de}.package-group h3{font-size:13px;letter-spacing:.02em;color:#315747;margin:0 0 9px;font-weight:800}.package-choice{background:#fff;border-color:#dce5de;padding:12px;gap:9px;margin:7px 0}.package-choice b{font-size:13px;color:#23483b}.package-choice span span{font-size:12px;color:#64756c;margin-top:3px;line-height:1.55}.package-choice:has(input:checked){background:#e7f0e6;border-color:#54836a}#packageCount{text-align:right;color:#64756c;font-size:11px;padding:2px 0 8px}
+
+/* content.js에서 입력한 줄바꿈 표시 */
+[data-t], .timeline-item h4, .timeline-item p, #summaryTitle, #summaryDesc, .wide-body h4, .wide-body p, .tall-body h4, .tall-body p, .package-choice span span {white-space:pre-line;}
+</style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brandline">
+        <div class="brand">DOTORIN.</div>
+        <div class="divider"></div>
+        <div class="tagline" data-t="brand_tag">Content Creator & Marketing Partner</div>
+      </div>
+      <div class="langs">
+        <button type="button" class="active" data-lang="en">EN</button>
+        <button type="button" data-lang="ko">KR</button>
+        <button type="button" data-lang="zh">中文</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#home" data-t="nav1">About</a>
+      <a href="#experience" data-t="nav2">Experience</a>
+      <a href="#videos" data-t="nav3">Activity Videos</a>
+      <a href="#process" data-t="nav4">Process</a>
+      <a href="#contact" data-t="nav5">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="home" class="hero">
+      <div class="hero-panel">
+        <div class="hero-photo"></div>
+        <div class="hero-copy">
+          <div class="eyebrow" data-t="eyebrow">BASED IN PERTH, WESTERN AUSTRALIA</div>
+          <h1 data-t="hero_title">Every Space Has a Story.</h1>
+          
+          <p class="hero-desc" data-t="hero_sub">A practical portfolio for travel, local spaces, lifestyle and education-related brands.</p>
+          <p class="hero-desc" style="margin-top:8px" data-t="hero_desc">I live in Perth and create easy-to-understand branded content for Korea-, Australia- and Chinese-speaking audiences.</p>
+          <div class="cta-row">
+            <a class="btn" href="#contact" data-t="btn_contact">Collaboration Inquiry</a>
+            <a class="btn out" href="#videos" data-t="btn_video">View Activity Videos</a>
+          </div>
+        </div>
+        <div class="metric-row">
+          <div class="metric"><strong>230K+</strong><span data-t="m1label">Highest video views</span></div>
+          <div class="metric"><strong>567K+</strong><span data-t="m2label">Total YouTube views</span></div>
+          <div class="metric"><strong>PERTH</strong><span data-t="m3label">Local production base in Perth, WA</span></div>
+        </div>
+      </div>
+      <div class="chip-row">
+        <span class="chip" data-t="chip1">Travel</span>
+        <span class="chip" data-t="chip2">Local Space</span>
+        <span class="chip" data-t="chip3">Education</span>
+        <span class="chip" data-t="chip4">Restaurant & Café</span>
+        <span class="chip" data-t="chip5">Beauty & Skincare</span>
+      </div>
+    </section>
+
+
+    <section id="intro">
+      <div class="eyebrow" data-t="intro_eyebrow">ABOUT</div>
+      <div class="intro-card">
+        <img class="intro-photo" src="https://kokoboppppp2017-svg.github.io/global-collab/dotorin.jpg" alt="Dotorin portrait">
+        <div class="intro-body">
+          <h2 data-t="intro_title">DOTORIN — Creator, Marketer, Storyteller.</h2>
+          <p data-t="intro_p1">I create practical and easy-to-understand branded content for travel, local space, lifestyle and education-related brands.</p>
+          <p data-t="intro_p2">Based in Perth, I work locally in Australia and can also publish in Chinese when needed through Chinese-language platform accounts.</p>
+          <div class="intro-facts">
+            <div class="fact"><strong data-t="intro_box1t">Base</strong><span data-t="intro_box1d">Perth, Western Australia</span></div>
+            <div class="fact"><strong data-t="intro_box2t">Markets</strong><span data-t="intro_box2d">Korea · Australia · Chinese-speaking audience</span></div>
+            <div class="fact"><strong data-t="intro_box3t">Focus</strong><span data-t="intro_box3d">Travel, restaurants, cafés, beauty, education, accommodation</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof">
+      <div class="eyebrow" data-t="proof_eyebrow">STRENGTHS</div>
+      <h2 data-t="proof_title">Verified strengths</h2>
+      <p class="lead" data-t="proof_lead">Strong delivery as a host, with persuasion backed by real outcomes.</p>
+      <div class="proof-grid">
+        <article class="proof-card">
+          <h3 data-t="proof_card1t">Strong delivery as a host</h3>
+          <p data-t="proof_card1d">Narration for public-sector promotional videos and radio hosting. Clear diction helps build trust.</p>
+        </article>
+        <article class="proof-card">
+          <h3 data-t="proof_card2t">All-round planning & production</h3>
+          <p data-t="proof_card2d">Experience operating a smart store and producing sponsored content. From planning to operations and settlement, I can cover the practical workflow end to end.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="eyebrow" data-t="timeline_eyebrow">EXPERIENCE</div>
+      <h2 data-t="timeline_title">Proven background & capabilities</h2>
+      <p class="lead" data-t="timeline_lead">A clearer summary of the business, marketing and production strengths behind DOTORIN.</p>
+      <div class="timeline-wrap" id="timelineWrap"></div>
+      <div class="summary-card">
+        <h3 id="summaryTitle"></h3>
+        <p id="summaryDesc"></p>
+      </div>
+    </section>
+
+    <section id="videos">
+      <div class="eyebrow" data-t="videos_eyebrow">ACTIVITY VIDEOS</div>
+      <h2 data-t="videos_title">Portfolio videos & collaboration examples</h2>
+      <p class="lead" data-t="videos_sub">The travel category uses landscape cards; the rest are vertical short-form cards.</p>
+      <div class="tabs" id="tabs"></div>
+      <div id="mediaWrap"></div>
+    </section>
+
+    <section id="process">
+      <div class="eyebrow" data-t="process_eyebrow">PROCESS</div>
+      <h2 data-t="process_title">Simple collaboration process</h2>
+      <div class="process-grid">
+        <div class="step"><div class="num">01</div><h4 data-t="p1t">1. Inquiry</h4><p data-t="p1d">Share your brand, goals and preferred style.</p></div>
+        <div class="step"><div class="num">02</div><h4 data-t="p2t">2. Proposal</h4><p data-t="p2d">I suggest content direction, format and deliverables.</p></div>
+        <div class="step"><div class="num">03</div><h4 data-t="p3t">3. Production</h4><p data-t="p3d">Filming, editing and communication during production.</p></div>
+        <div class="step"><div class="num">04</div><h4 data-t="p4t">4. Upload</h4><p data-t="p4d">Content upload and final sharing.</p></div>
+      </div>
+<div class="quote-area"><p data-t="quote_intro"></p><details id="quoteDetails"><summary class="btn" data-t="quote_options"></summary><form id="quoteForm"><div id="packageList"></div><div class="quote-fields"><label><span data-t="q_brand"></span><input name="brand" required></label><label><span data-t="q_goal"></span><textarea name="goal" rows="2"></textarea></label><label><span data-t="q_date"></span><input name="date"></label><label><span data-t="q_budget"></span><input name="budget"></label><label><span data-t="q_extra"></span><textarea name="extra" rows="2"></textarea></label></div><button class="btn" type="submit" data-t="q_send"></button><small data-t="q_mailnote"></small><div id="copyStatus" role="status" aria-live="polite"></div><textarea id="manualCopy" hidden readonly rows="6" style="width:100%;margin-top:8px"></textarea></form></details></div>
+    </section>
+
+    <section id="contact"><h2 data-t="contact_title"></h2><p class="lead" data-t="contact_sub"></p><div class="contact-card contact-new"><div class="email-side"><h3 data-t="email_title"></h3><p data-t="email_desc"></p><a class="email-cta" href="mailto:dotorin33@gmail.com" data-t="email_btn"></a><a class="email-address" href="mailto:dotorin33@gmail.com">✉ dotorin33@gmail.com</a></div><div class="social-side"><a href="https://www.youtube.com/@DotoRin33" target="_blank" rel="noopener"><i class="yt">▶</i><b>YouTube</b><small data-t="yt_desc"></small></a><a href="https://www.instagram.com/dotorin_life/" target="_blank" rel="noopener"><i class="ig">◎</i><b>Instagram</b><small data-t="ig_desc"></small></a><a href="https://xhslink.com/m/3p9G1q3ROxk" target="_blank" rel="noopener"><i class="xhs">小红书</i><b>Xiaohongshu</b><small data-t="xhs_desc"></small></a></div></div></section>
+  </main>
+  <footer><span data-t="footer">© 2026 DOTORIN. Perth, Western Australia.</span></footer>
+
+  <!-- 문구·영상 링크는 content.js에서 수정 -->
+  <script src="content.js"></script>
+  <script>
+
+    let currentLang = 'en';
+    let currentTab = 'travel';
+
+    function txt(key) { return T[currentLang][key] || T.en[key] || key; }
+
+    function applyText() {
+      document.documentElement.lang = currentLang === 'zh' ? 'zh-Hans' : currentLang;
+      document.title = currentLang === 'ko' ? 'DOTORIN | 협업 포트폴리오' : currentLang === 'zh' ? 'DOTORIN | 商务合作作品集' : 'DOTORIN | Creative Portfolio';
+      document.querySelectorAll('[data-t]').forEach(el => { const k = el.dataset.t; if (txt(k)) el.textContent = txt(k); });
+      document.querySelectorAll('[data-lang]').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === currentLang));
+      renderQuote();
+      renderTimeline();
+      renderTabs();
+      renderMedia();
+      document.getElementById('summaryTitle').textContent = SUMMARY[currentLang][0];
+      document.getElementById('summaryDesc').textContent = SUMMARY[currentLang][1];
+      animateCareer();
+
+    }
+
+    let careerObserver;
+    function animateCareer(){
+      if(careerObserver) careerObserver.disconnect();
+      if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+      careerObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.remove('reveal-pending');entry.target.classList.add('reveal-in');careerObserver.unobserve(entry.target);}})},{threshold:.12});
+      document.querySelectorAll('#experience .timeline-item,#experience .summary-card').forEach((el,i)=>{el.classList.remove('reveal-in');el.classList.add('reveal-pending');el.style.transitionDelay=(i%3)*75+'ms';careerObserver.observe(el);});
+    }
+    function renderTimeline() {
+      const wrap = document.getElementById('timelineWrap');
+      wrap.innerHTML = CAREER.map(item => `
+        <article class="timeline-item">
+          <h4>${item[currentLang][0]}</h4>
+          <p>${item[currentLang][1]}</p>
+        </article>`).join('');
+    }
+
+    const TAB_KEYS = ['travel','space','edu','food','beauty'];
+    function renderTabs() {
+      const box = document.getElementById('tabs');
+      box.innerHTML = TAB_KEYS.map(key => `
+        <button class="${currentTab === key ? 'active' : ''}" data-tab="${key}">${ key === 'all' ? txt('tab_all') : key === 'travel' ? txt('tab_travel') : key === 'space' ? txt('tab_space') : key === 'edu' ? txt('tab_edu') : key === 'food' ? txt('tab_food') : txt('tab_beauty') }</button>`).join('');
+      box.querySelectorAll('button').forEach(btn => btn.onclick = () => { currentTab = btn.dataset.tab; renderTabs(); renderMedia(); });
+    }
+
+    function renderCard(item) {
+      const wide=item.shape==='wide', kind=wide?'wide':'tall';
+      const linked=Boolean(item.link)&&!item.disabled;
+      const tag=linked?'a':'article';
+      return `<${tag} class="${kind}-card" ${linked?`href="${item.link}" target="_blank" rel="noopener"`:''}>
+        <div class="${kind}-thumb"><img src="${IMAGES[item.img]}" alt="" loading="lazy">${linked?'<span class="play">↗</span>':''}</div>
+        <div class="${kind}-body"><h4>${item.title[currentLang]}</h4><p>${item.desc[currentLang]}</p>
+        ${linked?`<small class="media-status">${txt('channel_link')}</small>`:''}${item.reference?`<a class="reference-link" href="${item.reference}" target="_blank" rel="noopener">${currentLang==='ko'?'협업 제안서':currentLang==='zh'?'合作提案':'Project proposal'} ↗</a>`:''}</div></${tag}>`;
+    }
+    function sectionBlock(key, items) {
+      const groupClass = currentTab === 'all' || currentTab === key ? 'media-group active' : 'media-group';
+      const title = key === 'travel' ? txt('tab_travel') : key === 'space' ? txt('tab_space') : key === 'edu' ? txt('tab_edu') : key === 'food' ? txt('tab_food') : txt('tab_beauty');
+      const listClass = key === 'travel' ? 'wide-list' : 'scroll-rail';
+      return `
+        <section class="${groupClass}">
+          <div style="font-size:11px;font-weight:800;color:#5d7b6a;letter-spacing:.12em;text-transform:uppercase;margin:4px 0 10px">${title}</div>
+          <div class="${listClass}">${items.map(renderCard).join('')}</div>
+        </section>`;
+    }
+
+    function renderMedia() {
+      const wrap = document.getElementById('mediaWrap');
+      const cats = ['travel','space','edu','food','beauty'];
+      wrap.innerHTML = cats.map(cat => sectionBlock(cat, MEDIA.filter(m => m.cat === cat))).join('');
+      if (currentTab !== 'all') {
+        wrap.querySelectorAll('.media-group').forEach(group => group.classList.remove('active'));
+        const mapIndex = {travel:0, space:1, edu:2, food:3, beauty:4}[currentTab];
+        const target = wrap.querySelectorAll('.media-group')[mapIndex];
+        if (target) target.classList.add('active');
+      }
+    }
+
+    document.querySelectorAll('[data-lang]').forEach(btn => btn.addEventListener('click', () => { currentLang = btn.dataset.lang; applyText(); }));
+
+Object.entries(quoteTexts).forEach(([k,v])=>['en','ko','zh'].forEach((l,i)=>T[l][k]=v[i]));
+function packageName(name,i){const group=quoteGroups.find(g=>g.ids.includes(name));return group.titles[i]+' — '+quoteNames[name][i];}
+function renderQuote(){const i=['en','ko','zh'].indexOf(currentLang);const list=document.getElementById('packageList');const selected=new Set([...list.querySelectorAll('input:checked')].map(el=>el.value));list.innerHTML=quoteGroups.map(g=>`<div class="package-group" role="group" aria-label="${g.titles[i]}"><h3>${g.titles[i]}</h3>${g.ids.map(name=>{const desc=quotePackages.find(p=>p[0]===name)[1];return `<label class="package-choice"><input type="checkbox" name="package" value="${name}" ${selected.has(name)?'checked':''}><span><b>${quoteNames[name][i]}</b><span>${desc[i]}</span></span></label>`;}).join('')}</div>`).join('')+`<div id="packageCount" aria-live="polite"></div>`;const update=()=>{const n=list.querySelectorAll('input:checked').length;document.getElementById('packageCount').textContent=[`${n} selected · Multiple selections allowed`,`${n}개 선택 · 복수 선택 가능`,`已选 ${n} 项 · 可多选`][i];};list.onchange=update;update();}
+
+document.getElementById('quoteForm').addEventListener('submit',async e=>{e.preventDefault();const data=new FormData(e.currentTarget);const i=['en','ko','zh'].indexOf(currentLang);const selected=data.getAll('package');if(!selected.length){alert(optionHelp[i]);return;}const packs=quotePackages.filter(x=>selected.includes(x[0]));const body=[...packs.map(x=>`${packageName(x[0],i)} — ${x[1][i]}`),'',...[['brand','q_brand'],['goal','q_goal'],['date','q_date'],['budget','q_budget'],['extra','q_extra']].map(([k,t])=>`${txt(t)}: ${data.get(k)||''}`)].join('\n');const subject=['Collaboration quotation request','협업 견적서 요청','合作报价咨询'][i];const value=subject+'\n\n'+body; const status=document.getElementById('copyStatus'); const button=document.querySelector('#quoteForm button[type=submit]'); try { if(!navigator.clipboard || !window.isSecureContext) throw new Error('clipboard unavailable'); await navigator.clipboard.writeText(value); } catch(err) { const area=document.createElement('textarea'); area.value=value; area.style.cssText='position:fixed;left:0;top:0;opacity:0'; document.body.appendChild(area); area.select(); let ok=false; try{ok=document.execCommand('copy')}catch(e){} area.remove(); if(!ok){status.textContent=['Copy failed. Please copy the text below.','자동 복사가 안 되었어요. 아래 내용을 직접 복사해 주세요.','复制失败，请手动复制以下内容。'][i];const manual=document.getElementById('manualCopy');manual.hidden=false;manual.value=value;manual.focus();manual.select();return;} } document.getElementById('manualCopy').hidden=true; status.textContent=['Copied!','복사 완료!','复制成功！'][i]; button.textContent=status.textContent; clearTimeout(window.copyReset); window.copyReset=setTimeout(()=>{button.textContent=txt('q_send');status.textContent='';},2500);});
+
+    document.querySelector(".intro-photo").src = PROFILE_IMAGE;
+    applyText();
+  </script>
+</body>
+</html>
