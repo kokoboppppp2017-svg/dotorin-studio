@@ -346,7 +346,7 @@ const MEDIA = [
     "cat": "travel",
     "shape": "wide",
     "img": "travel-01",
-    "link": "https://www.youtube.com/@DotoRin33",
+    "link": "https://youtu.be/owbh09neUh0?si=cM0znxGiBTu8SDOY",
     "disabled": false,
     "title": {
       "en": "Qingdao 5-Star Hotel & Local Collaboration",
@@ -363,7 +363,7 @@ const MEDIA = [
     "cat": "travel",
     "shape": "wide",
     "img": "travel-02",
-    "link": "https://www.youtube.com/@DotoRin33",
+    "link": "https://youtube.com/playlist?list=PLWIzRZeGzEsVr37pETInxjqP99nOEfkEL&si=3qgWBqTnCFsked0h",
     "disabled": false,
     "title": {
       "en": "Travel Content & City Storytelling",
@@ -380,7 +380,7 @@ const MEDIA = [
     "cat": "space",
     "shape": "tall",
     "img": "space-01",
-    "link": "https://www.youtube.com/@DotoRin33",
+    "link": "https://youtube.com/shorts/KsivTcwmBPk?si=SSmx0WUOnnPncxDB",
     "disabled": false,
     "title": {
       "en": "Jeonju Private Stay 01",
@@ -397,24 +397,7 @@ const MEDIA = [
     "cat": "space",
     "shape": "tall",
     "img": "space-02",
-    "link": "https://www.youtube.com/@DotoRin33",
-    "disabled": false,
-    "title": {
-      "en": "Jeonju Private Stay 02",
-      "ko": "전주 독채 숙소 02",
-      "zh": "全州独栋住宿 02"
-    },
-    "desc": {
-      "en": "Another angle on accommodation and local space storytelling.",
-      "ko": "숙소와 로컬 공간의 매력을 다른 톤으로 보여주는 콘텐츠.",
-      "zh": "以不同语气展现住宿与本地空间魅力的内容。"
-    }
-  },
-  {
-    "cat": "space",
-    "shape": "tall",
-    "img": "space-03",
-    "link": "https://www.youtube.com/@DotoRin33",
+    "link": "https://www.instagram.com/reel/DXv0vBOyVaZ/?fqnt=MXc0OTFxMnA5bGxqMw==",
     "disabled": false,
     "title": {
       "en": "Space & Local Course Guide",
@@ -424,14 +407,31 @@ const MEDIA = [
     "desc": {
       "en": "A short-form guide combining space recommendation and route information.",
       "ko": "공간 추천과 여행 코스 정보를 함께 담은 숏폼 콘텐츠.",
-      "zh": "结合空间推荐与路线信息的短视频内容。"
+      "zh": "结合空间推荐与路线信息的短视频内容。""
     }
+  },
+  {
+    "cat": "space",
+    "shape": "tall",
+    "img": "space-03",
+    "link": "https://www.youtube.com/@DotoRin33",
+    "disabled": false,
+  "title": {
+  "en": "Korea's No. 1 eSIM Brand Collaboration",
+  "ko": "국내 eSIM 시장 점유율 1위 브랜드 협업",
+  "zh": "韩国eSIM市场占有率第一品牌合作"
+},
+"desc": {
+  "en": "Sponsored short-form content naturally integrating Korea's No. 1 eSIM roaming brand into a real travel experience.",
+  "ko": "국내 eSIM 시장 점유율 1위 브랜드와의 협업. 실제 여행 경험에 브랜드 서비스를 자연스럽게 녹여낸 숏폼 광고 콘텐츠.",
+  "zh": "与韩国eSIM市场占有率第一的品牌合作，将品牌服务自然融入真实旅行体验的短视频广告内容。"
+}
   },
   {
     "cat": "edu",
     "shape": "tall",
     "img": "edu-01",
-    "link": "https://www.instagram.com/dotorin_life/",
+    "link": " https://youtube.com/shorts/mnAH87cBLx4?si=K6icvjK3S42xMKcL",
     "disabled": false,
     "title": {
       "en": "Travel English",
@@ -448,7 +448,7 @@ const MEDIA = [
     "cat": "edu",
     "shape": "tall",
     "img": "edu-02",
-    "link": "https://www.instagram.com/dotorin_life/",
+    "link": "https://youtube.com/shorts/cSVzE8T6Olk?si=lGEcDlzxPuZmJXd4",
     "disabled": false,
     "title": {
       "en": "Japanese Learning",
@@ -465,7 +465,7 @@ const MEDIA = [
     "cat": "edu",
     "shape": "tall",
     "img": "edu-03",
-    "link": "https://www.instagram.com/dotorin_life/",
+    "link": "https://youtube.com/shorts/-4VaY3psdKc?si=aNUQSPTBdKfY6uJZ",
     "disabled": false,
     "title": {
       "en": "Chinese Learning",
@@ -485,24 +485,7 @@ const MEDIA = [
     "link": "https://www.instagram.com/dotorin_life/",
     "disabled": false,
     "title": {
-      "en": "Café Feature",
-      "ko": "카페 소개",
-      "zh": "咖啡馆介绍"
-    },
-    "desc": {
-      "en": "Café-focused content with atmosphere and menu highlights.",
-      "ko": "분위기와 메뉴 포인트를 살린 카페 콘텐츠.",
-      "zh": "突出氛围与菜单亮点的咖啡馆内容。"
-    }
-  },
-  {
-    "cat": "food",
-    "shape": "tall",
-    "img": "food-02",
-    "link": "https://www.instagram.com/dotorin_life/",
-    "disabled": false,
-    "title": {
-      "en": "Restaurant Feature",
+     "en": "Restaurant Feature",
       "ko": "식당 소개",
       "zh": "餐厅介绍"
     },
@@ -515,25 +498,42 @@ const MEDIA = [
   {
     "cat": "food",
     "shape": "tall",
+    "img": "food-02",
+    "link": "https://www.instagram.com/dotorin_life/",
+    "disabled": false,
+    "title": {
+       "en": "Café Feature",
+      "ko": "카페 소개",
+      "zh": "咖啡馆介绍"
+    },
+    "desc": {
+        "en": "Café-focused content with atmosphere and menu highlights.",
+      "ko": "분위기와 메뉴 포인트를 살린 카페 콘텐츠.",
+      "zh": "突出氛围与菜单亮点的咖啡馆内容。"
+    }
+  },
+  {
+    "cat": "food",
+    "shape": "tall",
     "img": "food-03",
     "link": "https://www.instagram.com/dotorin_life/",
     "disabled": false,
     "title": {
-      "en": "Food & Travel Promotion",
-      "ko": "여행 코스 연계 외식 홍보",
-      "zh": "旅行路线与餐饮推广"
-    },
-    "desc": {
-      "en": "Naturally featuring restaurants and cafés in travel itineraries and local experiences.",
-      "ko": "여행 코스와 현지 경험에 식당·카페를 자연스럽게 녹여 홍보합니다.",
-      "zh": "将餐厅和咖啡馆自然融入旅行路线与当地体验进行推广。"
-    }
+     "en": "Local Dining Experience",
+"ko": "현지 맛집 및 미식 경험",
+"zh": "当地美食与餐厅体验"
+},
+"desc": {
+  "en": "Short-form content showcasing local cuisine, restaurant atmosphere and authentic dining experiences during travel.",
+  "ko": "여행 중 직접 방문한 현지 식당의 음식과 공간 분위기, 실제 미식 경험을 담은 숏폼 콘텐츠.",
+  "zh": "通过旅行中的实地探访，呈现当地美食、餐厅氛围与真实用餐体验的短视频内容。"
+}
   },
   {
     "cat": "beauty",
     "shape": "tall",
     "img": "beauty-01",
-    "link": "https://www.instagram.com/dotorin_life/",
+    "link": "https://www.instagram.com/reel/Dfv9wvBhNpj/?fqnt=MXVvbmQ4dzRzbXBodQ==",
     "disabled": false,
     "title": {
       "en": "VT Cosmetics Collaboration",
@@ -580,7 +580,7 @@ const IMAGES = {
   "food-02": "images/food-02-new.jpg",
   "food-03": "images/food-03-new.jpg",
   "beauty-01": "images/beauty-01-new.jpg",
-  "beauty-02": "images/beauty-02-new.jpg"
+  "beauty-02": "images/beauty-02-new.JPG"
 };
 
 // 견적 문의 문구
