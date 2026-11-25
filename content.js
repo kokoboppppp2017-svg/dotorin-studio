@@ -407,7 +407,7 @@ const MEDIA = [
     "desc": {
       "en": "A short-form guide combining space recommendation and route information.",
       "ko": "공간 추천과 여행 코스 정보를 함께 담은 숏폼 콘텐츠.",
-      "zh": "结合空间推荐与路线信息的短视频内容。""
+      "zh": "结合空间推荐与路线信息的短视频内容。"
     }
   },
   {
